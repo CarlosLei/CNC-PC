@@ -16,11 +16,16 @@ public:
 
 
 private slots:
-
+    void newFile();
+    void openFile();
+    void saveFile();
+    void saveasFile();
 
 private:
     void createActions();
     void createMenus();
+    void createToolBar();
+    void createStatusBar();
 
     QMenu *fileMenu;
     QMenu *editMenu;
@@ -30,7 +35,7 @@ private:
 
     QAction *newAction;
     QAction *openAction;
-    QAction *savaAction;
+    QAction *saveAction;
     QAction *saveasAction;
     QAction *exitAction;
 
