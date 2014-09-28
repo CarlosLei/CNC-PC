@@ -5,6 +5,8 @@
 class QAction;
 class QMenu;
 class QToolBar;
+class QTextEdit;
+class EventLabel;
 
 class MainWindow : public QMainWindow
 {
@@ -20,12 +22,14 @@ private slots:
     void openFile();
     void saveFile();
     void saveasFile();
+    void aboutCNCPC();
 
 private:
     void createActions();
     void createMenus();
     void createToolBar();
     void createStatusBar();
+
 
     QMenu *fileMenu;
     QMenu *editMenu;
@@ -41,6 +45,10 @@ private:
 
     QAction *aboutAction;
 
+    //富文本编辑器
+    QTextEdit *textEdit;
+    EventLabel *firstpointlabel;
+    EventLabel *lastpointlabel;
 };
 
 #endif // MAINWINDOW_H

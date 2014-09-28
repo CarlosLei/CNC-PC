@@ -21,5 +21,6 @@
         <file>images/undo.png</file>
         <file>images/zoomIn.png</file>
         <file>images/zoomOut.png</file>
+        <file>images/CNC-PC.png</file>
     </qresource>
 </RCC>

@@ -13,9 +13,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    eventlabel.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    eventlabel.h
 
 RESOURCES += \
     Icon.qrc
